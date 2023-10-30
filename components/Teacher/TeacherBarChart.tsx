@@ -1,6 +1,13 @@
 "use client"
 
-import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+} from "recharts"
 
 import { TeacherBarChartData } from "@/lib/data"
 
@@ -21,6 +28,7 @@ export function TeacherBarChart() {
           tickLine={false}
           axisLine={false}
         />
+        <CartesianGrid stroke="#f3f4f6" vertical={false} />
         <Bar
           dataKey="total"
           fill="rgb(64 64 64)"

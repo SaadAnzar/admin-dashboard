@@ -1,4 +1,5 @@
 import {
+  CartesianGrid,
   Line,
   LineChart,
   ResponsiveContainer,
@@ -24,7 +25,7 @@ export function TeacherUsage() {
           bottom: 0,
         }}
       >
-        {/* <CartesianGrid strokeDasharray="3 3" /> */}
+        <CartesianGrid stroke="#f3f4f6" vertical={false} />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />

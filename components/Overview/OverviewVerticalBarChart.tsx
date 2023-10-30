@@ -1,6 +1,13 @@
 "use client"
 
-import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+} from "recharts"
 
 import { OverviewVerticalBarChartData } from "@/lib/data"
 
@@ -26,6 +33,12 @@ export function OverviewVerticalBarChart() {
           tickLine={false}
           axisLine={false}
         />
+        <CartesianGrid
+          // strokeDasharray="3 3"
+          horizontal={false}
+          stroke="#f3f4f6"
+        />
+
         <Bar
           dataKey="total"
           fill="rgb(64 64 64)"
